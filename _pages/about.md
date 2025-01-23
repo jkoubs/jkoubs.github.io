@@ -1,34 +1,18 @@
 ---
-title: About Board
-subtitle: Board is a stylish full-width masonry grid theme. Made for designers, artists, photographers and developers to show off their best work.
-description: Board is a stylish full-width masonry grid theme.
-featured_image: /images/demo/landscape-05.jpg
+title: About Me
+featured_image: /images/about/profile_pic.jpg
 ---
 
-![](/images/demo/landscape-05.jpg)
+Hello, I'm Jason Koubi, a Robotics Software Engineer with a strong foundation in Mechanical Engineering. 
 
-## Features
+<img src="/images/about/profile_pic.jpg" alt="About Me" width="70%">
 
-We've packed Board full of powerful features to help showcase your work:
 
-* Beautiful, minimal design
-* Full-width masonry grid layout
-* Responsive – works perfectly on all devices
-* Portfolio post type
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+My journey into robotics software development began with my first project, "Cali," an autonomous mobile manipulator designed to carry out Fetch-and-Carry missions. Developing Cali from scratch not only deepened my understanding of robotics but also fueled my passion for creating intelligent systems that interact effortlessly with their surroundings.
 
-## Get Board
+As a ROS expert, I’m now looking to join a forward-thinking team dedicated to pioneering robotics software development. I’m seeking a role as a Robotics Software Engineer or ROS Developer, where I can contribute my skills and continue advancing in this thrilling field. If you're hiring, I’d love to connect!
 
-Board is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
 
-<a href="https://jekyllthemes.io/theme/board-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
+---
+
+My aim is to apply my expertise to drive innovative robotics projects while continuing to grow in this dynamic field. I am deeply passionate about tackling complex challenges and collaborating with professionals who share a similar vision.
