@@ -18,7 +18,7 @@ We've included everything you need to create engaging posts about your work, and
 
 You can create lists:
 
-* Simple bulleted lists Jas
+* Simple bulleted lists Jason
 * Like this one
 * Are cool
 
