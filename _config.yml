@@ -1,7 +1,7 @@
 site: Board Jekyll Theme
 
-url: 
-baseurl: 
+url: "https://jkoubs.github.io"
+baseurl:
 
 collections:
   pages:
