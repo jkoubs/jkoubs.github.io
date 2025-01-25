@@ -20,17 +20,17 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Development of Cali, an Autonomous Mobile MAnipulator – Portfolio</title>
+	<title>Fetch-and-Carry Task with <em>Cali</em> – Portfolio</title>
 	<meta name="description" content="">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Development of Cali, an Autonomous Mobile MAnipulator – Portfolio">
+	<meta name="twitter:title" content="Fetch-and-Carry Task with <em>Cali</em> – Portfolio">
 	<meta name="twitter:description" content="">
 	<meta name="twitter:image:src" content="http://localhost:4000/images/projects/2022-12-cali/AN_real.gif">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Development of Cali, an Autonomous Mobile MAnipulator – Portfolio" />
+	<meta property="og:title" content="Fetch-and-Carry Task with <em>Cali</em> – Portfolio" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="http://localhost:4000/images/projects/2022-12-cali/AN_real.gif" />
 
@@ -118,14 +118,14 @@
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="Development of Cali, an Autonomous Mobile MAnipulator – Portfolio">
+		<div class="page__content" data-page-title="Fetch-and-Carry Task with <em>Cali</em> – Portfolio">
 
 			<section class="intro">
 
 	<div class="wrap">
 
-		<h1>Development of Cali, an Autonomous Mobile MAnipulator</h1>
-		<p>Cali will Perform a Fetch-and-carry Task in a GPS-denied Environment</p>
+		<h1>Fetch-and-Carry Task with <em>Cali</em></h1>
+		<p>Development of <em>Cali</em> : An Autonomous Mobile Manipulator for Fetch-and-Carry Tasks in GPS-Denied Environments</p>
 
 	</div>
 
@@ -135,19 +135,124 @@
 
 	<h2 id="overview">Overview</h2>
 
+<p><strong><em>Cali</em></strong> is an open-source robotic platform designed for research and education in mobile manipulation. It leverages off-the-shelf components and integrates open-source software to facilitate high-level task development for mobile manipulators.</p>
+
+<p><img src="/images/projects/2022-12-cali/CAD.png" alt="" /></p>
+
+<p><em>Cali</em> is composed of a customed 4-wheeled skid steer drive mobile platform and a commercial manipulator system: <strong><em>Scorbot-ER III</em></strong>:</p>
+
 <h3 id="goal">Goal</h3>
+
+<p>Develop a modular, extensible system that simplifies mobile manipulator research and enables autonomous <strong>Fetch-and-Carry missions</strong>.</p>
 
 <h3 id="key-features">Key Features</h3>
 
+<ul>
+  <li>Modular integration of navigation, manipulation, and perception pipelines.</li>
+  <li>ROS Melodic and Ubuntu 18.04-based platform.</li>
+  <li>Hardware includes a skid-steer drive base and Sorbot-ER III robotic arm.</li>
+  <li>Real-time operation with Nvidia Jetson TX2.</li>
+</ul>
+
 <h2 id="technical-approach">Technical Approach</h2>
+
+<h3 id="hardware">Hardware</h3>
+
+<ul>
+  <li><strong>Base:</strong> Custom four-wheeled skid-steer base.</li>
+  <li><strong>Manipulator:</strong> <strong><em>Sorbot-ER III</em></strong> robotic arm with 5 DOF + gripper.</li>
+  <li><strong>Sensors:</strong> LiDAR, depth camera, IMU, encoders.</li>
+  <li><strong>Power:</strong> 12V 50Ah lithium battery.</li>
+</ul>
+
+<h3 id="software">Software</h3>
+
+<ul>
+  <li><strong>Framework:</strong> ROS Melodic.</li>
+  <li><strong>Simulator:</strong> Gazebo.</li>
+  <li><strong>Libraries:</strong> OpenCV, Moveit</li>
+</ul>
+
+<h3 id="subsystems">Subsystems</h3>
+
+<ul>
+  <li>Mapping, navigation, manipulation, and perception pipelines.</li>
+  <li>Manipulation/Perception pipeline.</li>
+</ul>
 
 <h2 id="implementation-details">Implementation Details</h2>
 
+<h3 id="mapping">Mapping</h3>
+
+<p><img src="/images/projects/2022-12-cali/mapping.gif" alt="mapping" /></p>
+
+<h3 id="navigation">Navigation</h3>
+
+<p><img src="/images/projects/2022-12-cali/AN_v2.gif" alt="AN_v2" /></p>
+
+<h3 id="manipulation">Manipulation</h3>
+
+<p><img src="/images/projects/2022-12-cali/grasp_coke_can.gif" alt="grasp_coke_can" /></p>
+
+<h3 id="perception">Perception</h3>
+
+<p><img src="/images/projects/2022-12-cali/surface_detection.png" alt="surface_detection" /></p>
+
+<h3 id="manipulationperception-pipeline">Manipulation/Perception Pipeline</h3>
+
+<p><img src="/images/projects/2022-12-cali/manipulation_perception_pipeline.gif" alt="manipulation_perception_pipeline" /></p>
+
 <h2 id="results">Results</h2>
+
+<h3 id="simulated-environment">Simulated Environment</h3>
+
+<p>As we have seen <em>Cali</em> has successfully performed the high-level task:</p>
+
+<ul>
+  <li>Mapping</li>
+  <li>Autonomous Navigation</li>
+  <li>Manipulation</li>
+  <li>Perception</li>
+  <li>Manipulation/Perception pipeline</li>
+</ul>
+
+<p><strong>As a result it was able to successfully perform the Fetch-and-carry mission in an indoor environment.</strong></p>
+
+<p><img src="/images/projects/2022-12-cali/mission.gif" alt="mission" /></p>
+
+<h3 id="real-robot">Real Robot</h3>
+
+<p><img src="/images/projects/2022-12-cali/real_robot_v2.png" alt="real_robot_v2" /></p>
+
+<ul>
+  <li>Successfully performed autonomous navigation and perception pipelines for the real robot.</li>
+  <li>Due to time constraints, the manipulation pipeline was not integrated as communication with the arm manipulator could not be established due to some time constraints with my university.</li>
+  <li>This limitation will be addressed in the <a href="#next-steps">Next Steps</a> section, immediately following this one.</li>
+</ul>
+
+<p>Here is a GIF demonstrating the real robot’s autonomous navigation:</p>
+
+<p><img src="/images/projects/2022-12-cali/AN_real.gif" alt="AN_real" /></p>
+
+<p>Now let’s observe the perception results on the real robot:</p>
+
+<p><img src="/images/projects/2022-12-cali/perception_real.png" alt="perception_real" /></p>
 
 <h2 id="next-steps">Next Steps</h2>
 
+<p>There is still work yet to be done to realize the real-world application of the Fetch-and-Carry task, specifically in controlling the robot arm using the <strong><em>FollowJointTrajectory</em></strong> and <strong><em>GripperCommand</em></strong> action interfaces. Future efforts will investigate hardware interfaces or alternatives to rosserial for communication. Once communication with these action interfaces is established, <em>Cali</em> will be able to achieve its mission in the real world.</p>
+
+<p>Here are some suggestions for potential next steps:</p>
+
+<ul>
+  <li>Establish communication with manipulation interfaces to enable real-world task execution.</li>
+  <li>Develop a <strong>hardware interface</strong> to facilitate communication with the manipulator.</li>
+  <li>Implement <strong>failure recovery procedures</strong> to address unexpected issues, such as unsuccessful task completion (e.g., grasping failures).</li>
+</ul>
+
 <h2 id="github-repository">GitHub Repository</h2>
+
+<p><a href="https://github.com/jkoubs/Cali-Mobile-Manipulator/tree/master">Explore the Project on GitHub</a></p>
 
 
 
