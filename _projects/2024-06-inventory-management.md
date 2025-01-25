@@ -7,6 +7,10 @@ date: 2024-06-10
 
 ## Overview
 
+### Goal
+
+### Key Features
+
 ## Technical Approach
 
 ## Implementation Details
