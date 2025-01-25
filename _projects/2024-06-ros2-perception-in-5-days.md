@@ -5,8 +5,7 @@ featured_image: 'images/projects/2024-06-ros2-perception-in-5-days/scenario3.gif
 date: 2024-06-10
 ---
 
-![course_image](/images/projects/2024-06-ros2-perception-in-5-days/course_image.jpg)
-
+<img src="/images/projects/2024-06-ros2-perception-in-5-days/course_image.jpg" alt="course_image" width="1080" height="810">
 
 ## Overview
 
@@ -52,7 +51,7 @@ This course is designed to provide you with a comprehensive understanding of **p
 - Intro to ROS 2 and Sensor Integration.
 - LaserScan, Image and PointCloud2 Messages.
 
-![unit2](/images/projects/2024-06-ros2-perception-in-5-days/unit2.gif)
+<img src="/images/projects/2024-06-ros2-perception-in-5-days/unit2.gif" alt="unit2" width="1080" height="810">
 
 ### 3. Image Processing
 
@@ -73,7 +72,7 @@ This course is designed to provide you with a comprehensive understanding of **p
 - Intro to Human-Robot Interaction.
 - Face Detection, Face Recognition and Human Tracking.
 
-![unit5](/images/projects/2024-06-ros2-perception-in-5-days/unit5.png)
+<img src="/images/projects/2024-06-ros2-perception-in-5-days/unit5.png" alt="unit5" width="1080" height="810">
 
 ### 6. AI Perception Techniques with YOLO
 
