@@ -5,6 +5,9 @@ featured_image: 'images/projects/2024-06-ros2-perception-in-5-days/scenario3.gif
 date: 2024-06-10
 ---
 
+![course_image](/images/projects/2024-06-ros2-perception-in-5-days/course_image.jpg)
+
+
 ## Overview
 
 ***ROS 2 Perception in 5 Days*** is an educational course I developed during my time working with **The Construct Robotics Institute**. This course embarks on an exciting journey into the realm of **perception** in robotics using ROS 2. Through a series of structured units and hands-on projects, participants explore various aspects of sensor data processing and perception techniques.
@@ -79,14 +82,12 @@ This course is designed to provide you with a comprehensive understanding of **p
 
 ![unit6](/images/projects/2024-06-ros2-perception-in-5-days/unit6.png)
 
-### 7. Project: Intelligent Inventory Management with ROS 2
+### 7. Project: Intelligent Inventory Management
 
 - Real-world project application
 - Implementation of Inventory Management
 
 ![unit7](/images/projects/2024-06-ros2-perception-in-5-days/unit7.gif)
-
-![scenario3](/images/projects/2024-06-ros2-perception-in-5-days/scenario3.gif)
 
 ## Results and Impact
 
