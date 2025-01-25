@@ -157,6 +157,12 @@
 
 <h2 id="technical-approach">Technical Approach</h2>
 
+<h3 id="robot-cubix">Robot: Cubix</h3>
+
+<p><img src="/images/projects/2025-01-cubix-reinforcement-learning/cubix.png" alt="cubix" width="900" height="675" /></p>
+
+<p>The robot used in this project is <strong>Cubix</strong>, a versatile, mobile robotic platform designed for experimentation in navigation and control. Cubix operates within a simulated environment and relies on a <strong>Force-Torque Controller</strong> to move and rotate. This controller sends commands using the <strong><em>geometry_msgs/Wrench</em></strong> topic in ROS 2, enabling precise control over the forces and torques applied to the robot. These inputs allow Cubix to navigate its environment, responding dynamically to its orientation and the goals set within the simulation.</p>
+
 <h3 id="software">Software</h3>
 
 <ul>
@@ -173,6 +179,19 @@
   <li>Transition to Deep Q-Learning (DQL) to handle continuous state spaces and more complex robotic tasks.</li>
   <li>Gain hands-on experience implementing RL algorithms for a robotic platform (Cubix) and test them in simulated environments.</li>
 </ul>
+
+<h2 id="why-reinforcement-learning">Why Reinforcement Learning?</h2>
+
+<h3 id="understanding-the-action-space-with-cubix">Understanding the Action Space with Cubix</h3>
+
+<p>Though at first glance, applying force and torque to Cubix seems straightforward, it becomes quite challenging due to how Cubix responds to these inputs based on its orientation. The same force-torque combination will result in entirely different movements when Cubix is oriented differently. <strong>This is because the direction Cubix is facing directly impacts how it interprets and executes the applied forces</strong>. In other words, the same action can produce different results depending on how the robot is oriented in space.</p>
+
+<h3 id="why-is-it-so-difficult">Why is it so difficult?</h3>
+<p>Imagine trying to move Cubix to a specific goal pose. While there are theoretically infinite ways to reach the pose, determining the most efficient and accurate way requires precise control of the Force-Torque Controller. Adding to the complexity, the force and torque must be applied with the correct intensity, timing, and duration to avoid overshooting or unwanted behaviors. Solving this problem manually is not only time-consuming but also impractical for complex tasks.</p>
+
+<h3 id="the-rl-solution">The RL Solution</h3>
+
+<p><strong>Reinforcement Learning offers a robust solution to these challenges. Instead of manually tuning the force-torque controller, RL enables Cubix to learn optimal strategies through trial and error. By receiving feedback from its environment, Cubix discovers which combinations of force and torque are most effective for reaching the goal pose. This approach allows the robot to adapt and improve its performance over time, achieving efficient and reliable navigation without direct manual intervention.</strong></p>
 
 <h2 id="course-summary">Course Summary</h2>
 
@@ -194,6 +213,13 @@
 
 <p><img src="/images/projects/2025-01-cubix-reinforcement-learning/unit2.gif" alt="unit2" width="600" height="450" /></p>
 
+<p>This GIF demonstrates Cubix executing its 12 discrete actions:</p>
+
+<ul>
+  <li><strong>Translational</strong>: Forward, Backward, Left, Right, Up and Down</li>
+  <li><strong>Rotational</strong>: Roll Left, Roll Right, Pitch Foward, Pitch Backward, Yaw Left, Yaw Right</li>
+</ul>
+
 <h3 id="3-q-learning">3. Q-Learning</h3>
 
 <ul>
@@ -205,6 +231,8 @@
 
 <p><img src="/images/projects/2025-01-cubix-reinforcement-learning/unit3.gif" alt="unit3" /></p>
 
+<p>Cubix successfully achieves its mission by reaching a target destination using <strong>Q-Learning</strong>. This video demonstrates the results after training, showcasing Cubix testing the optimal policy it learned over the course of several thousand episodes.</p>
+
 <h3 id="4-deep-q-learning-dql">4. Deep Q-Learning (DQL)</h3>
 
 <ul>
@@ -215,6 +243,8 @@
 </ul>
 
 <p><img src="/images/projects/2025-01-cubix-reinforcement-learning/DQL_Cubix_Test.gif" alt="unit4" /></p>
+
+<p>Here, we test a more challenging target destination, and Cubix successfully navigates to its goal by utilizing <strong>Deep Q-Learning</strong>.</p>
 
 <h2 id="access-course">Access Course</h2>
 
