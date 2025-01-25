@@ -5,4 +5,14 @@ featured_image: 'images/projects/2024-06-inventory-management/scenario3.gif'
 date: 2024-06-10
 ---
 
-## Introduction
+## Overview
+
+## Technical Approach
+
+## Implementation Details
+
+## Results
+
+## Next Steps
+
+## GitHub Repository
