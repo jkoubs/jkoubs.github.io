@@ -33,12 +33,12 @@ This course is designed to provide you with a comprehensive understanding of **p
 
 ## What You Will Learn
 
-- Learn to integrate and process sensor data in ROS 2
-- Implement image processing algorithms using OpenCV
-- Work with point cloud data and use the Point Cloud Library (PCL)
-- Explore human-robot interaction with face detection and recognition
-- Apply AI perception techniques using deep learning frameworks
-- Develop a real-world project on intelligent inventory management
+- Learn to integrate and process sensor data in ROS 2.
+- Implement image processing algorithms using OpenCV.
+- Work with point cloud data and use the Point Cloud Library (PCL).
+- Explore human-robot interaction with face detection and recognition.
+- Apply AI perception techniques using deep learning frameworks.
+- Develop a real-world project on intelligent inventory management.
 
 ## Course Summary
 
