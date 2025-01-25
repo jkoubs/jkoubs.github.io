@@ -17,14 +17,14 @@
 	position: relative;
 	padding: $grid-spacing/2;
 	float: left;
-	width: 50%;
+	width: 100%; /* Full-width for small screens */
 
 	@include mq(tabletl) {
-		width: 33.33%;
+		width: 50%; /* Half-width for tablets */
 	}
 
 	@include mq(desktop) {
-		width: 25%;
+		width: 33.33%; /* 1/3 width for desktops */
 	}
 }
 
@@ -51,6 +51,7 @@
 
 .listing-item__image {
 	width: 100%;
+	height: auto; /* Maintain aspect ratio */
 }
 
 .listing-item__content {
