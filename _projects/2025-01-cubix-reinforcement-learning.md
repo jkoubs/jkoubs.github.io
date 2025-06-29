@@ -109,6 +109,10 @@ Cubix successfully achieves its mission by reaching a target destination using *
 
 Here, we test a more challenging target destination, and Cubix successfully navigates to its goal by utilizing **Deep Q-Learning**.
 
+## Rating & Testimonials
+
+![testimonials](/images/projects/2025-01-cubix-reinforcement-learning/testimonials.png)
+
 ## Access Course
 
 Feel free to access the course [here](https://app.theconstruct.ai/courses/mastering-reinforcement-learning-for-robotics-286/).
