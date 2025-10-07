@@ -1,7 +1,7 @@
 ---
 title: 'ROS 2 Perception in 5 Days'
 subtitle: 'Computer Vision Applications in a Simulated Environment'
-featured_image: 'images/projects/2024-06-ros2-perception-in-5-days/scenario3_resized_480.gif'
+featured_image: 'images/projects/2024-06-ros2-perception-in-5-days/scenario3.gif'
 date: 2024-06-10
 ---
 
